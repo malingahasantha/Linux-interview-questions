@@ -7,21 +7,25 @@ Source for the questions: https://www.reddit.com/r/linuxquestions/comments/11tyn
 
 * How do you troubleshoot a server that is running slowly?
   * Check the server resources CPU, memory, disk and network.
-  * top - show all running processes
-  * iostat - monitor system input/output devices (physical and logical) by detecting the time for which these devices are active.
-  * check cpu infomation - lscpu, cat/proc/cpuinfo
-  * mpstat - report processor related statistics
-  * sar - show cpu utilization | sar -u - show cpu usage
-  * free -m - check memory status in mb
-  * sar -r - show memory usage historically
-  * df -h - show disk space in human readable format
-  * fdisk -l - capacity of our hard disk, the partitions within it, and their respective sizes
-  * lsblk - show all the available block devices connected to the system, except RAM.
-  * ipaddr - check ip address 
-  * ifconfig - show current configuration for network interface from here also we can get ip address
-  * traceroute - trace path network packets take from source to destination host
-  * netstat - statistics about active connections
-  * You can terminate unnecessary processes, increase the memory size, defragment the disk, or use a faster network adapter based on the investigation.
+     * top - show all running processes
+     * iostat - monitor system input/output devices (physical and logical) by detecting the time for which these devices are active.
+     * check cpu infomation - lscpu, cat/proc/cpuinfo
+     * mpstat - report processor related statistics
+     * sar - show cpu utilization | sar -u - show cpu usage
+     * free -m - check memory status in mb
+     * sar -r - show memory usage historically
+     * df -h - show disk space in human readable format
+     * fdisk -l - capacity of our hard disk, the partitions within it, and their respective sizes
+     * lsblk - show all the available block devices connected to the system, except RAM.
+     * ipaddr - check ip address 
+     * ifconfig - show current configuration for network interface from here also we can get ip address
+     * traceroute - trace path network packets take from source to destination host
+     * netstat - statistics about active connections
+     * You can terminate unnecessary processes, increase the memory size, defragment the disk, or use a faster network adapter based on the investigation.
+  * Analyze the server logs - We can use journalctl, syslog commands
+  * Test the server functionality which can help you verify if the server is performing as expected and delivering the desired results. You can use tools like Ping, Traceroute, or Telnet to test the server's connectivity, latency, and availability.
+  * Review the server configuration - You can use tools like Nmap, Wireshark, or Netstat to monitor and analyze the server's network traffic and ports. you can check for firewall rules, proxy settings, encryption protocols, or authentication methods.
+  * Update the server software or Seek professional help
 
 * How do you configure a network interface in Linux?
 
