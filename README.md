@@ -32,8 +32,10 @@ Source for the questions: https://www.reddit.com/r/linuxquestions/comments/11tyn
 * What is the difference between a process and a thread?
 
 * How do you check the available disk space in Linux?
+   * By typing df (disk-free) will show the disk usage details for every file system on your Linux machine. df -h will show the output in a human-readable format.
 
 * What is the role of the superuser in Linux?
+   * It's like admin access. It has unrestricted access to all commands, files, directories, and resources.
 
 * What is the difference between a hard link and a symbolic link?
 
