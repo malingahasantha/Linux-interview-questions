@@ -40,14 +40,21 @@ Source for the questions: https://www.reddit.com/r/linuxquestions/comments/11tyn
 * What is the difference between a hard link and a symbolic link?
 
 * How do you check the status of a service in Linux?
+   * Use "systemctl status service-name" command   
 
 * How do you set up a firewall in Linux?
+   * iptables is install by default on most linux systems. we can use "sudo apt-get install iptables" to install iptables
+   * To display all of the current rules on your server - iptables -L
+   * according to the needs we can change firewall configuration as in this site : https://help.ovhcloud.com/csm/asia-dedicated-servers-firewall-iptables?id=kb_article_view&sysparm_article=KB0043429
 
 * What is SELinux and how do you configure it?
+   * To change SELinux configuration you can edit - "/etc/selinux/config" file
+   * change SELINUX = enforcing
 
 * What is the difference between a soft link and a hard link in Linux?
 
 * How do you find all files modified in the last 24 hours in Linux?
+   * find directory-path -type f -mtime -1 > change.txt --f for file you can use d for directories. "-1" means anything changed one day or less ago.
 
 * How do you mount a file system in Linux?
 
