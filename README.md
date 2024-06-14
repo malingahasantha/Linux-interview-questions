@@ -40,7 +40,10 @@ Source for the questions: https://www.reddit.com/r/linuxquestions/comments/11tyn
 * What is the difference between a hard link and a symbolic link?
 
 * How do you check the status of a service in Linux?
-   * Use "systemctl status service-name" command   
+   * Use "systemctl status service-name" command
+      * Eg:- systemctl status httpd --> Check the status of Apache
+      * We can use systemctl to start, stop and restart the services --> (sudo systemctl start application | sudo systemctl stop application | sudo systemctl restart application)
+      * The above commands are useful for starting or stopping services during the current session. To tell systemd to start services automatically at boot, you must enable them. To start a service at boot, use the enable command: sudo systemctl enable application
 
 * How do you set up a firewall in Linux?
    * iptables is install by default on most linux systems. we can use "sudo apt-get install iptables" to install iptables
