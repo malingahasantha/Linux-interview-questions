@@ -51,10 +51,15 @@ Source for the questions: https://www.reddit.com/r/linuxquestions/comments/11tyn
    * according to the needs we can change firewall configuration as in this site : https://help.ovhcloud.com/csm/asia-dedicated-servers-firewall-iptables?id=kb_article_view&sysparm_article=KB0043429
 
 * What is SELinux and how do you configure it?
-   * To change SELinux configuration you can edit - "/etc/selinux/config" file
-   * change SELINUX = enforcing
+   * Security Enhanced Linux - Is a security architecture for linux that allows administrators to have more control over who can access the system. It allows administrators to block unauthorized access to system resources.
+	  * To change SELinux configuration you can edit - "/etc/selinux/config" file
+		 * change SELINUX = enforcing / permissive / disabled - change the SELINUX parameter to one of these three modes.
+For more information go through this article :-   https://phoenixnap.com/kb/selinux![image](https://github.com/malingahasantha/Linux-interview-questions/assets/13369328/060ee131-f431-4b1d-9793-251e2a882dbe)
 
 * What is the difference between a soft link and a hard link in Linux?
+   * A Hard Link acts as a copy (mirrored) of the selected file. It accesses the data available in the original file. If the earlier selected file is deleted, the hard link to the file will still contain the data of that file.
+		 * A Soft Link  (also known as a Symbolic link) acts as a pointer or a reference to the file name. It does not access the data available in the original file. If the earlier file is deleted, the soft link will be pointing to a file that does not exist anymore.
+Hard links refer to the same inode, hence they cannot cross filesystems. Soft links are simply references to a file, whether on the same disc or different disc.![image](https://github.com/malingahasantha/Linux-interview-questions/assets/13369328/058f9de3-47fc-4e47-bb65-c38c0308d581)
 
 * How do you find all files modified in the last 24 hours in Linux?
    * find directory-path -type f -mtime -1 > change.txt --f for file you can use d for directories. "-1" means anything changed one day or less ago.
